@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Additional Message: " + (message || "None");
 
         const url =
-            "https://wa.me/23279613842?text=" +
+            "https://wa.me/23272030688?text=" +
             encodeURIComponent(whatsappText);
 
         window.location.href = url;
