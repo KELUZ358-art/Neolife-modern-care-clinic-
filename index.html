@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NeoLife Modern Care Clinic in Regent Road, Lumley, Freetown, Sierra Leone."
+    >
+
+    <title>
+        NeoLife Modern Care Clinic | Freetown
+    </title>
+
+    <!-- Main Website Style -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="#home"
+            class="logo"
+        >
+
+            <img
+                src="images/neolife-logo.png"
+                alt="NeoLife Modern Care Clinic Logo"
+            >
+
+            <span>
+                NeoLife Modern Care Clinic
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            onclick="toggleMenu()"
+            aria-label="Open menu"
+            type="button"
+        >
+            ☰
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <nav id="navLinks">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#doctors">Doctors</a>
+
+            <a href="#facilities">Facilities</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#tour">Clinic Tour</a>
+
+            <a href="#feedback">Reviews</a>
+
+            <a href="#appointment">Appointment</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section
+    id="home"
+    class="hero"
+>
+
+    <div class="hero-content">
+
+
+        <img
+            src="images/neolife-logo.png"
+            alt="NeoLife Modern Care Clinic"
+            class="hero-logo"
+        >
+
+
+        <h1>
+
+            Welcome to
+
+            <span>
+                NeoLife Modern Care Clinic
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Professional healthcare and compassionate
+            service for our community.
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+                href="#appointment"
+                class="btn"
+            >
+                Book Appointment
+            </a>
+
+
+            <a
+                href="#tour"
+                class="btn secondary"
+            >
+                Clinic Tour
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                About NeoLife Modern Care Clinic
+            </h2>
+
+            <p>
+                Healthcare with professionalism and care.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <img
+                src="images/clinic.jpg"
+                alt="NeoLife Modern Care Clinic"
+            >
+
+
+            <div>
+
+                <h3>
+                    Welcome to NeoLife Modern Care Clinic
+                </h3>
+
+
+                <p>
+
+                    NeoLife Modern Care Clinic is located at
+                    Regent Road, Lumley, Freetown,
+                    Sierra Leone.
+
+                </p>
+
+
+                <p>
+
+                    Our website allows patients to learn
+                    about our clinic, facilities, healthcare
+                    services, doctors and appointment options.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FACILITIES
+===================================================== -->
+
+<section id="facilities">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Our Facilities
+            </h2>
+
+            <p>
+                Explore NeoLife Modern Care Clinic.
+            </p>
+
+        </div>
+
+
+
+        <!-- LABORATORY -->
+
+        <div class="facility">
+
+            <h3>
+                Laboratory
+            </h3>
+
+
+            <div
+                class="slider"
+                id="labSlider"
+            >
+
+                <img
+                    src="images/laboratory1.jpg"
+                    class="slide active"
+                    alt="NeoLife laboratory"
+                >
+
+                <img
+                    src="images/laboratory2.jpg"
+                    class="slide"
+                    alt="NeoLife laboratory"
+                >
+
+                <img
+                    src="images/laboratory3.jpg"
+                    class="slide"
+                    alt="NeoLife laboratory"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('labSlider', -1)"
+                    aria-label="Previous laboratory image"
+                >
+                    ❮
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('labSlider', 1)"
+                    aria-label="Next laboratory image"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NURSING ROOM -->
+
+        <div class="facility">
+
+            <h3>
+                Nursing Room
+            </h3>
+
+
+            <div
+                class="slider"
+                id="nursingSlider"
+            >
+
+                <img
+                    src="images/nursing1.jpg"
+                    class="slide active"
+                    alt="NeoLife nursing room"
+                >
+
+                <img
+                    src="images/nursing2.jpg"
+                    class="slide"
+                    alt="NeoLife nursing room"
+                >
+
+                <img
+                    src="images/nursing3.jpg"
+                    class="slide"
+                    alt="NeoLife nursing room"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('nursingSlider', -1)"
+                    aria-label="Previous nursing room image"
+                >
+                    ❮
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('nursingSlider', 1)"
+                    aria-label="Next nursing room image"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- OFFICE -->
+
+        <div class="facility">
+
+            <h3>
+                Office
+            </h3>
+
+
+            <div
+                class="slider"
+                id="officeSlider"
+            >
+
+                <img
+                    src="images/office1.jpg"
+                    class="slide active"
+                    alt="NeoLife clinic office"
+                >
+
+                <img
+                    src="images/office2.jpg"
+                    class="slide"
+                    alt="NeoLife clinic office"
+                >
+
+                <img
+                    src="images/office3.jpg"
+                    class="slide"
+                    alt="NeoLife clinic office"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('officeSlider', -1)"
+                    aria-label="Previous office image"
+                >
+                    ❮
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('officeSlider', 1)"
+                    aria-label="Next office image"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RECEPTION -->
+
+        <div class="facility">
+
+            <h3>
+                Reception
+            </h3>
+
+
+            <div
+                class="slider"
+                id="receptionSlider"
+            >
+
+                <img
+                    src="images/reception1.jpg"
+                    class="slide active"
+                    alt="NeoLife reception"
+                >
+
+                <img
+                    src="images/reception2.jpg"
+                    class="slide"
+                    alt="NeoLife reception"
+                >
+
+                <img
+                    src="images/reception3.jpg"
+                    class="slide"
+                    alt="NeoLife reception"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('receptionSlider', -1)"
+                    aria-label="Previous reception image"
+                >
+                    ❮
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('receptionSlider', 1)"
+                    aria-label="Next reception image"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BUILDING -->
+
+        <div class="facility">
+
+            <h3>
+                Clinic Building
+            </h3>
+
+
+            <div
+                class="slider"
+                id="buildingSlider"
+            >
+
+                <img
+                    src="images/building1.jpg"
+                    class="slide active"
+                    alt="NeoLife clinic building"
+                >
+
+                <img
+                    src="images/building2.jpg"
+                    class="slide"
+                    alt="NeoLife clinic building"
+                >
+
+                <img
+                    src="images/building3.jpg"
+                    class="slide"
+                    alt="NeoLife clinic building"
+                >
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('buildingSlider', -1)"
+                    aria-label="Previous clinic building image"
+                >
+                    ❮
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('buildingSlider', 1)"
+                    aria-label="Next clinic building image"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- DOCTORS -->
+
+<section id="doctors">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Doctors</h2>
+
+            <p>
+                Meet our healthcare professionals.
+            </p>
+
+        </div>
+
+        <div class="doctor-grid">
+
+            <div class="doctor-card">
+                <h3>Dr. Joseph John</h3>
+                <p>Medical Doctor</p>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Dr. Ali Sar</h3>
+                <p>General Physician</p>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Dr. Alice Kamara</h3>
+                <p>Medical Practitioner</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+    id="services"
+    class="section"
+>
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+            Our Medical Services
+        </h2>
+
+
+        <p class="section-intro">
+
+            NeoLife Modern Care Clinic provides healthcare
+            services in a professional and welcoming environment.
+
+        </p>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🩺
+                </div>
+
+                <h3>
+                    General Consultation
+                </h3>
+
+                <p>
+                    Consultation and general healthcare
+                    support for patients.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔬
+                </div>
+
+                <h3>
+                    Laboratory Services
+                </h3>
+
+                <p>
+                    Laboratory services for appropriate
+                    medical testing and examination.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💊
+                </div>
+
+                <h3>
+                    Pharmacy
+                </h3>
+
+                <p>
+                    Access to healthcare products and medicines
+                    subject to clinic availability.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    👨‍⚕️
+                </div>
+
+                <h3>
+                    Medical Care
+                </h3>
+
+                <p>
+                    Professional healthcare support from
+                    the clinic's medical team.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Patient Care
+                </h3>
+
+                <p>
+                    A welcoming environment designed around
+                    patient care and support.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Appointments
+                </h3>
+
+                <p>
+                    Request an appointment through our
+                    online appointment form.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Medicine & Herbs</h2>
+
+            <p>
+                Explore our herbal and healthcare products.
+            </p>
+
+        </div>
+
+
+        <!-- 12 HERB SLIDESHOW -->
+
+        <div class="facility">
+
+            <h3>🌿 Herbal Products</h3>
+
+            <div
+                class="slider"
+                id="herbSlider"
+            >
+
+                <img src="images/herb1.jpg"
+                     class="slide active"
+                     alt="NeoLife herbal product 1">
+
+                <img src="images/herb2.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 2">
+
+                <img src="images/herb3.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 3">
+
+                <img src="images/herb4.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 4">
+
+                <img src="images/herb5.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 5">
+
+                <img src="images/herb6.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 6">
+
+                <img src="images/herb7.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 7">
+
+                <img src="images/herb8.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 8">
+
+                <img src="images/herb9.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 9">
+
+                <img src="images/herb10.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 10">
+
+                <img src="images/herb11.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 11">
+
+                <img src="images/herb12.jpg"
+                     class="slide"
+                     alt="NeoLife herbal product 12">
+
+
+                <button
+                    type="button"
+                    onclick="changeSlide('herbSlider',-1)"
+                    aria-label="Previous herb"
+                >
+                    ❮
+                </button>
+
+                <button
+                    type="button"
+                    onclick="changeSlide('herbSlider',1)"
+                    aria-label="Next herb"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+            <p>
+                Discover the herbal products available
+                at NeoLife Modern Care Clinic.
+            </p>
+
+        </div>
+
+
+        <!-- MEDICINE -->
+
+        <div class="product-grid">
+
+            <div class="product-card">
+
+                <img
+                    src="images/medicine1.jpg"
+                    alt="NeoLife medicine"
+                >
+
+                <h3>Medicine</h3>
+
+                <p>
+                    Healthcare products available
+                    subject to clinic availability.
+                </p>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <img
+                    src="images/medicine2.jpg"
+                    alt="NeoLife healthcare products"
+                >
+
+                <h3>Healthcare Products</h3>
+
+                <p>
+                    Healthcare products available
+                    subject to clinic availability.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLINIC TOUR
+===================================================== -->
+
+<section id="tour">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Clinic Tour
+            </h2>
+
+            <p>
+                Watch a video tour of NeoLife
+                Modern Care Clinic.
+            </p>
+
+        </div>
+
+
+        <div class="video">
+
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="NeoLife Clinic Tour"
+                allowfullscreen
+            ></iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PATIENT FEEDBACK
+===================================================== -->
+
+<section id="feedback">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Patient Feedback
+            </h2>
+
+            <p>
+                Patient experiences and feedback.
+            </p>
+
+        </div>
+
+
+        <div class="feedback-grid">
+
+
+            <div class="feedback">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    
+“NeoLife Modern Care Clinic provided me with excellent care. The staff were welcoming, respectful, and attentive throughout my visit. I truly appreciate the service I received.”
+                </p>
+
+                <h4>
+                    Mr. KANU
+                </h4>
+
+            </div>
+
+
+
+            <div class="feedback">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    
+“I had a very good experience at NeoLife Modern Care Clinic. The environment was comfortable, and the staff treated me with kindness and professionalism. Thank you for the wonderful care.”
+                </p>
+
+                <h4>
+                    Mrs. Winner Sele
+                </h4>
+
+            </div>
+
+
+
+            <div class="feedback">
+
+                <div class="stars">
+                    ★★★★
+                </div>
+
+                <p>
+                    
+“I am pleased with the care I received at NeoLife Modern Care Clinic. The staff were friendly and helpful, and everything was handled professionally. I would gladly recommend the clinic to others.”
+                </p>
+
+                <h4>
+                    Mr. Paul Kamara
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     APPOINTMENT
+===================================================== -->
+
+<section
+    id="appointment"
+    class="appointment"
+>
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Book an Appointment
+            </h2>
+
+            <p>
+                Send your appointment request to the clinic.
+            </p>
+
+        </div>
+
+
+        <form id="appointmentForm">
+
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                autocomplete="name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                autocomplete="tel"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                autocomplete="email"
+            >
+
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+
+            <select
+                id="service"
+                required
+            >
+
+                <option value="">
+                    Select Service
+                </option>
+
+                <option value="General Consultation">
+                    General Consultation
+                </option>
+
+                <option value="Laboratory">
+                    Laboratory
+                </option>
+
+                <option value="Nursing">
+                    Nursing
+                </option>
+
+                <option value="Medical Review">
+                    Medical Review
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+
+            <select
+                id="doctor"
+                required
+            >
+
+                <option value="">
+                    Select Doctor
+                </option>
+
+                <option value="Dr. Joseph John">
+                    Dr. Joseph John
+                </option>
+
+                <option value="Dr. Ali Sar">
+                    Dr. Ali Sar
+                </option>
+
+                <option value="Dr. Alice Kamara">
+                    Dr. Alice Kamara
+                </option>
+
+            </select>
+
+
+            <input
+                type="time"
+                id="time"
+                required
+            >
+
+
+            <textarea
+                id="message"
+                placeholder="Message"
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Request Appointment
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Contact Us
+            </h2>
+
+            <p>
+                Get in touch with NeoLife Modern Care Clinic.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    📍 Address
+                </h3>
+
+                <p>
+
+                    Regent Road, Lumley,<br>
+                    Freetown, Sierra Leone
+
+                </p>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <h3>
+                    📧 Email
+                </h3>
+
+                <a href="mailto:neolifemoderncareclinic@example.com">
+
+                    neolifemoderncareclinic@example.com
+
+                </a>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <h3>
+                    💬 WhatsApp
+                </h3>
+
+                <a
+                    href="https://wa.me/232XXXXXXXXX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <img
+        src="images/neolife-logo.png"
+        alt="NeoLife Modern Care Clinic"
+    >
+
+
+    <h3>
+        NeoLife Modern Care Clinic
+    </h3>
+
+
+    <p>
+        Regent Road, Lumley, Freetown, Sierra Leone
+    </p>
+
+
+    <p>
+        ©
+        <span id="year"></span>
+        NeoLife Modern Care Clinic
+    </p>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+<script src="appointment.js"></script>
+</body>
+</html>

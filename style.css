@@ -1,0 +1,735 @@
+/* ================================
+   NEOLIFE CLINIC STYLE
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7fff6;
+    color: #183b20;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 3px 15px #0002;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 75px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: #4ca536;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: #23552d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #61b63d;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ================= GENERAL ================= */
+
+section {
+    padding: 70px 20px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: #26702f;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #68756b;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+
+    background: #61b83d;
+    color: white;
+
+    padding: 13px 24px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #428d29;
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(#17632dcc, #17632dcc),
+        url("images/building1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-logo {
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    margin: 0 auto 20px;
+
+    background: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #a4f278;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary {
+    background: white;
+    color: #26702f;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    align-items: center;
+}
+
+.about-grid img {
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #0002;
+}
+
+.about-grid h3 {
+    color: #287530;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-grid p {
+    margin-bottom: 15px;
+}
+
+
+/* ================= FACILITIES ================= */
+
+.facility {
+    background: white;
+
+    margin-bottom: 35px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 7px 25px #0002;
+}
+
+.facility h3 {
+    text-align: center;
+    color: #287530;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.slider {
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.slide {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0009;
+    color: white;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.slider button:first-of-type {
+    left: 15px;
+}
+
+.slider button:last-of-type {
+    right: 15px;
+}
+
+.slider button:hover {
+    background: #61b83d;
+}
+
+
+/* ================= DOCTORS ================= */
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.doctor-card {
+    background: white;
+
+    text-align: center;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 7px 25px #0002;
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    color: #287530;
+    margin-top: 15px;
+}
+
+.doctor-card p {
+    padding-bottom: 20px;
+    color: #68756b;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 7px 25px #0002;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #287530;
+    padding: 18px 18px 5px;
+}
+
+.product-card p {
+    padding: 0 18px 20px;
+    color: #68756b;
+}
+
+
+/* ================= VIDEO ================= */
+
+#tour {
+    background: #edf8ea;
+}
+
+.video {
+    max-width: 900px;
+    margin: auto;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 30px #0003;
+}
+
+.video iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+
+/* ================= FEEDBACK ================= */
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feedback {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 7px 25px #0002;
+}
+
+.stars {
+    color: #f0b400;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feedback h4 {
+    margin-top: 15px;
+    color: #287530;
+}
+
+
+/* ================= APPOINTMENT ================= */
+
+.appointment {
+    background: #226a2c;
+    color: white;
+}
+
+.appointment .section-title h2 {
+    color: white;
+}
+
+.appointment .section-title p {
+    color: #dcefdc;
+}
+
+#appointmentForm {
+    max-width: 900px;
+    margin: auto;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+
+    box-shadow: 0 10px 30px #0003;
+}
+
+#appointmentForm input,
+#appointmentForm select,
+#appointmentForm textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccd8cc;
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+#appointmentForm textarea {
+    grid-column: 1 / -1;
+    min-height: 120px;
+    resize: vertical;
+}
+
+#appointmentForm button {
+    grid-column: 1 / -1;
+    width: fit-content;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 7px 25px #0002;
+}
+
+.contact-card h3 {
+    color: #287530;
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: #287530;
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #173b1e;
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    margin: 0 auto 10px;
+
+    background: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+footer p {
+    color: #d8e7da;
+    margin-top: 5px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        box-shadow: 0 5px 15px #0002;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-grid,
+    .product-grid,
+    .feedback-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .video iframe {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 8px 15px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    #appointmentForm {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #appointmentForm textarea,
+    #appointmentForm button {
+        grid-column: auto;
+    }
+
+    .slider {
+        height: 250px;
+    }
+}
+/* ===============================
+   SERVICES
+================================ */
+
+.section-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: -20px auto 40px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 12px;
+    color: #087f8c;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   MOBILE SERVICES
+================================ */
+
+@media (max-width: 850px) {
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ===============================
+   SMOOTH MENU SCROLL
+================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
