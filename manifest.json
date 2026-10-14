@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "description": "NeoLife Modern Care Clinic is a healthcare website in Freetown, Sierra Leone, where visitors can explore clinic services and access appointment booking.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "NeoLife Modern Care Clinic",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "NeoLife Clinic",
+  "start_url": "./",
+  "theme_color": "#0dfc14",
+  "id": "Neolifemoderncareclinic "
+}
